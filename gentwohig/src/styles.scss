@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-background: #004643;
+  --clr-headline: #fffffe;
+  // --clr-paragraph: #abd1c6;
+  --clr-paragraph: #9AE2CD; // more color friendly
+
+  --clr-button: #f9bc60;
+  --clr-button-text: #001e1d;
+
+  --ff-primary: "Roboto", sans-serif;
+  --ff-accent: "Playfair Display", serif;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+  background-color: var(--clr-background);
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-headline);
+  font-family: var(--ff-accent);
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--clr-paragraph)
+}
+
+// h2,
+// h3,
+// p {
+//   margin-bottom: 1em;
+// }
+
+// img {
+//   display: block;
+//   max-width: 100%;
+// }
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+icon-color {
+  color: var(--clr-button);
+}
+
+

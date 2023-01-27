@@ -1,0 +1,62 @@
+$minColWidth: 350px;
+$gridGap: 2rem;
+
+.container {
+  padding: $gridGap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($minColWidth, 1fr));
+  flex-grow: 50%;
+  grid-gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  min-width: 0;
+}
+
+.hero-image {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  position: relative;
+  width: min(70vw, 470px);
+}
+img {
+  width: 100%;
+}
+
+.bottom-below-right{
+  position: absolute;
+  bottom :-10rem;
+  right: -10rem;
+  z-index: -1
+}
+
+.star-left-corner {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+}
+
+.star-right-corner {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+}
+
+.hero-text {
+  position: relative;
+  width: min(70vw, 470px);
+}
+
+// TO DO: remove star on ipad air screen size and below
+.diamond-star {
+  position: absolute;
+  top: -9rem;
+  left: 1.5rem;
+}
+
+.rainbow {
+  position: absolute;
+  top: 25rem;
+  transform: rotate(-20deg);
+}
