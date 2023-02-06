@@ -11,7 +11,7 @@
   --clr-background: #004643;
   --clr-headline: #fffffe;
   // --clr-paragraph: #abd1c6;
-  --clr-paragraph: #9AE2CD; // more color friendly
+  --clr-paragraph: #9ae2cd; // more color friendly
 
   --clr-button: #f9bc60;
   --clr-button-text: #001e1d;
@@ -26,14 +26,18 @@ body {
   font-size: 1.3125rem;
   line-height: 1.6;
   background-color: var(--clr-background);
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 body,
 h1,
 h2,
 h3,
-p {
+p,
+li {
   margin: 0;
+  letter-spacing: 0.064em;
 }
 
 h1,
@@ -47,7 +51,12 @@ h3 {
 }
 
 p {
-  color: var(--clr-paragraph)
+  color: var(--clr-paragraph);
+}
+
+li,
+a {
+  color: var(--clr-headline);
 }
 
 // h2,
@@ -69,5 +78,3 @@ p {
 icon-color {
   color: var(--clr-button);
 }
-
-

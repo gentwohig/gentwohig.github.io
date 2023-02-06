@@ -1,0 +1,32 @@
+<div class="container">
+  <!-- <input id="menuToggle" /> -->
+  <!-- <label tabindex="0" for="menuToggle" class="menuOpen"> -->
+    <span class="nav-menu-button" (click)="openCloseNav()">
+      <svg width="50px" height="50px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg" color="var(--clr-button)">
+        <path d="M3 5h18M3 12h18M3 19h18" stroke="var(--clr-button)" stroke-width="2.5">
+        </path>
+      </svg>
+    </span>
+  <!-- </label> -->
+
+
+  <nav class="nav-bar">
+    <ul class="primary-navigation">
+      <li>
+        <a (click)="openCloseNav()">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="nav-menu" id="navMenu">
+    <ul class="nav-menu-links">
+      <!-- TO DO: Style Home link as default pressed - different colour, underline maybe -->
+      <li class="nav-menu-link" routerLink="/" (click)="openCloseNav()">Home</li>
+      <li class="nav-menu-link">About</li>
+      <li class="nav-menu-link" routerLink="experience-page" (click)="openCloseNav()">Experience</li>
+      <li class="nav-menu-link">Projects</li>
+      <li class="nav-menu-link">Contact</li>
+    </ul>
+  </nav>
+</div>
