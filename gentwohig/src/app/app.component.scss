@@ -1,0 +1,9 @@
+@import '~@angular/material/theming';
+
+@mixin app-root-typography($config) {
+  app-root {
+    h1 {
+      font-size:60px;
+    }
+  }
+}
