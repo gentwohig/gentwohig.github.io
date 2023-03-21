@@ -1,5 +1,4 @@
 export const environment = {
-  firebase: {
-  },
+  test: true,
   production: true
 };
