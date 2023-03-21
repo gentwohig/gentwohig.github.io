@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "genevievetwohig": {
+      "hosting": {
+        "gentwohig": [
+          "genevievetwohig"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "genevievetwohig"
+  }
+}

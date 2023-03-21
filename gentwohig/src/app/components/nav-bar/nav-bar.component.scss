@@ -1,6 +1,4 @@
-.nav-bar {
-  // background-color: yellow;
-}
+@import "variables";
 
 input {
   display: none;
@@ -31,7 +29,7 @@ li {
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.094em;
-  color: var(--clr-headline);
+  color: map-get($my_theme, "headline" );
   cursor: pointer;
 }
 
@@ -55,14 +53,14 @@ a {
   align-items: center;
   justify-content: center;
   z-index: 100;
-  background: var(--clr-background);
+  background: map-get($my_theme, "background");
   top: 0;
   left: 0;
 }
 
 
 .nav-menu-link:hover {
-  color: var(--clr-button);
+  color: map-get($my_theme, "accent");
   transform: scale(1.1);
   cursor: pointer;
 }

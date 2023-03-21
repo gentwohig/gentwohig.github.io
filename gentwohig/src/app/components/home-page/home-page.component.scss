@@ -11,6 +11,15 @@ $gridGap: 2rem;
   justify-content: center;
 }
 
+p {
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
 .hero-image {
   position: relative;
   width: min(70vw, 470px);

@@ -1,13 +1,24 @@
 <div class="form-container">
-  <form class="example-form">
+  <p>Want to get in contact with me? Send me a message below or you can DM me on LinkedIn :)</p>
+  <form class="example-form" action="https://formsubmit.co/gen.twohig@gmail.com" method="POST" [formGroup]="messageForm">
     <mat-form-field class="example-full-width">
       <mat-label>Email</mat-label>
-      <input matInput placeholder="Ex. xyz@email.com" value="email">
+      <input
+        matInput
+        placeholder="Ex. xyz@email.com"
+        value="email"
+        type="email"
+        formControlName="email">
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
       <mat-label>Message</mat-label>
-      <textarea matInput placeholder="Hi Gen,..."></textarea>
+      <textarea
+        matInput
+        placeholder="Hi Gen,..."
+        formControlName="note">
+      </textarea>
     </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" (click)="onSubmit()">Submit</button>
   </form>
 </div>

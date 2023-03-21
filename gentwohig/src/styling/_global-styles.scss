@@ -1,0 +1,60 @@
+@import "variables";
+@import "./overrides";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  // line-height: 1.6;
+  background-color: map-get($my_theme, "background");
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+li {
+  margin: 0;
+  letter-spacing: 0.064em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: map-get($my_theme, "headline" );
+  margin-bottom: 1rem;
+}
+
+p, li {
+  color: map-get($my_theme, "paragraph" );
+}
+
+// img {
+//   display: block;
+//   max-width: 100%;
+// }
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+icon-color {
+  color: map-get($my_theme, "accent");
+}
+
+@include override-mat-tab;

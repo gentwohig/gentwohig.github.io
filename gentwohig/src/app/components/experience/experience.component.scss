@@ -1,25 +1,5 @@
-
-:host ::ng-deep .mat-tab-body {
-  .mat-tab-body-content {
-    overflow: hidden;
-  }
-}
-
-
-:host ::ng-deep mat-tab-group {
-  .mat-tab-header {
-    .mat-tab-label-container .mat-tab-list {
-      font-size: 1.4rem;
-    }
-  }
-  .mat-ink-bar {
-      border-bottom: 0.189rem solid var(--clr-button);
-    }
-}
-
-:host ::ng-deep .mat-tab-label .mat-tab-link {
-  font-size: 1.4rem;
-}
+@import "variables";
+@import "overrides";
 
 .tab-group {
   max-width: 90vw;
@@ -27,8 +7,6 @@
 
 h3 {
   width: 100%;
-  font-weight: 600;
-
 }
 
 .tab-content {

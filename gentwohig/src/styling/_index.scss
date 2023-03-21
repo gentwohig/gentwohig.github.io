@@ -1,0 +1,17 @@
+@import "~@angular/material/theming";
+@import "./variables";
+@import "./typography";
+
+// See https://material.angular.io/guide/theming for typography details
+@include mat-core();
+
+// Default typography
+@include angular-material-typography($custom-typography);
+
+// $app-primary: mat-palette(map-get($my_theme, "background"));
+// $app-accent:  mat-palette(mat-get(($my_theme, "button")));
+// $app-warn:  mat-palette(map-get($my_theme, "error"));
+
+// $theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+
+// @include angular-material-theme($theme);

@@ -1,0 +1,16 @@
+@import "variables";
+
+@mixin override-mat-tab {
+  .mat-tab-group {
+    .mat-tab-header {
+      .mat-tab-label-container .mat-tab-list {
+        color: map-get($my_theme, "headline");
+        font-size: 1.4rem;
+        .mat-ink-bar {
+          border-bottom: 0.189rem solid map-get($my_theme, "accent")
+        }
+      }
+    }
+}
+}
+

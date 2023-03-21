@@ -31,9 +31,13 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss"
+              "src/index.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styling"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -100,10 +104,24 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss"
+              "src/index.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styling"
+              ]
+            },
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "gentwohig:build:production",
+            "firebaseProject": "genevievetwohig",
+            "firebaseHostingSite": "genevievetwohig"
           }
         }
       }
