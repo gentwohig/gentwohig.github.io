@@ -57,4 +57,9 @@ icon-color {
   color: map-get($my_theme, "accent");
 }
 
+a {
+  text-decoration: none;
+}
+
 @include override-mat-tab;
+@include override-mat-card;

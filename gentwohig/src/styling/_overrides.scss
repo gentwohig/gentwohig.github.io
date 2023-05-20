@@ -7,10 +7,24 @@
         color: map-get($my_theme, "headline");
         font-size: 1.4rem;
         .mat-ink-bar {
-          border-bottom: 0.189rem solid map-get($my_theme, "accent")
+          border-bottom: 0.189rem solid map-get($my_theme, "accent");
         }
       }
     }
-}
+  }
 }
 
+@mixin override-mat-card {
+  .mat-card {
+    .mat-card-header {
+      .mat-card-title {
+        color: map-get($my_theme, "cardHeadline");
+      }
+    }
+    .mat-card-content {
+      p {
+        color: map-get($my_theme, "cardText");
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 <div class="form-container">
-  <p>Want to get in contact with me? Send me a message below or you can DM me on LinkedIn :)</p>
+  <p>Want to get in contact with me? Send me a message below or you can DM me on <a target="_blank" href="https://www.linkedin.com/in/genevieve-twohig/">LinkedIn</a> :)</p>
   <form class="example-form" action="https://formsubmit.co/gen.twohig@gmail.com" method="POST" [formGroup]="messageForm">
-    <mat-form-field class="example-full-width">
+    <mat-form-field class="example-full-width" appearance="outline">
       <mat-label>Email</mat-label>
       <input
         matInput
@@ -11,7 +11,7 @@
         formControlName="email">
     </mat-form-field>
 
-    <mat-form-field class="example-full-width">
+    <mat-form-field class="example-full-width" appearance="outline">
       <mat-label>Message</mat-label>
       <textarea
         matInput
@@ -19,6 +19,8 @@
         formControlName="note">
       </textarea>
     </mat-form-field>
-    <button mat-raised-button color="primary" type="submit" (click)="onSubmit()">Submit</button>
+    <button mat-button class="live-site" (click)="onSubmit()" type="submit">
+      <span>Submit</span>
+    </button>
   </form>
 </div>
