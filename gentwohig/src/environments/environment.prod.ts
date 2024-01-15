@@ -1,6 +1,6 @@
 export const environment = {
   firebase: {
-    projectId: process.env?.["projectId"],
+    projectId: process.env?.["projectIdd"],
     appId: process.env?.['appId'],
     databaseURL: process.env?.['databaseURL'],
     storageBucket: process.env?.['storageBucket'],
