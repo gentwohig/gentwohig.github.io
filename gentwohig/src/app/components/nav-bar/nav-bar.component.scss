@@ -24,13 +24,18 @@ ul {
 }
 
 li {
-  margin: 1rem 1.5rem 0;
+  margin: 4rem 1.5rem 0;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   letter-spacing: 0.094em;
   color: map-get($my_theme, "headline" );
   cursor: pointer;
+}
+
+.nav-bar-contact-link {
+  font-size: 1.5rem;
+  margin: 1rem 1.5rem 0;
 }
 
 a {
@@ -39,7 +44,7 @@ a {
 
 .nav-menu-button {
   position: absolute;
-  padding: 1rem;
+  padding-left: 1rem;
   z-index: 101;
 }
 
@@ -63,4 +68,63 @@ a {
   color: map-get($my_theme, "accent");
   transform: scale(1.1);
   cursor: pointer;
+}
+
+@keyframes to-close-icon {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 79.9;
+  }
+  60% {
+    stroke-dashoffset: 79.9;
+    rotate: calc(var(--rotation));
+  }
+  100% {
+    stroke-dashoffset: 0;
+    rotate: var(--rotation);
+  }
+}
+@keyframes to-open-icon {
+  0% {
+    stroke-dashoffset: 0;
+    rotate: var(--rotation);
+  }
+  40% {
+    stroke-dashoffset: 79.9;
+    rotate: var(--rotation);
+  }
+  60% {
+    stroke-dashoffset: 79.9;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hamburger-icon {
+  --button-color: #f9bc60;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+}
+
+.hamburger-icon .hamburger {
+  transition: translate 1s, rotate 1s;
+}
+
+.hamburger-icon[aria-expanded="true"] .hamburger {
+  translate: 10px -10px;
+  rotate: 0.125turn;
+}
+
+.hamburger-icon .line {
+  transition: 1s;
+  stroke-dasharray: 60 31 60 300;
+}
+
+.hamburger-icon[aria-expanded="true"] .line {
+  stroke-dasharray: 60 105 60 300;
+  stroke-dashoffset: -90;
 }

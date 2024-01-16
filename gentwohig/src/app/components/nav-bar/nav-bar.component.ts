@@ -14,15 +14,24 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public animation(buttonState: boolean) {
+    const button = document.getElementById("newHamNav") as HTMLElement;
+    if (buttonState) {
+      button.setAttribute("aria-expanded", "true");
+    } else {
+      button.setAttribute("aria-expanded", "false");
+    }
+  }
+
 
   public openCloseNav() {
     this.openFullNavToggle = !this.openFullNavToggle;
+    this.animation(this.openFullNavToggle)
     const navManuEl = document.getElementById("navMenu");
-    console.log(navManuEl)
-    if(this.openFullNavToggle) {
+    if (this.openFullNavToggle) {
       navManuEl!.style.width = "100%";
     }
-    if(!this.openFullNavToggle) {
+    if (!this.openFullNavToggle) {
       navManuEl!.style.width = "0%";
     }
   }
