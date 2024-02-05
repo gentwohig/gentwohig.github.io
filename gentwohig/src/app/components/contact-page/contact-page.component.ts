@@ -1,5 +1,5 @@
 import { Component  } from '@angular/core';
-import { Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { Validators, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Firestore, collectionData, collection, addDoc } from '@angular/fire/firestore';
 
 @Component({
@@ -9,9 +9,9 @@ import { Firestore, collectionData, collection, addDoc } from '@angular/fire/fir
 })
 export class ContactPageComponent {
 
-  public messageForm: FormGroup;
+  public messageForm: UntypedFormGroup;
 
-  constructor(private firestore: Firestore, private fb: FormBuilder) {
+  constructor(private firestore: Firestore, private fb: UntypedFormBuilder) {
     this.messageForm = fb.group({
       email: ['', {
         validators: [Validators.required, Validators.email],
