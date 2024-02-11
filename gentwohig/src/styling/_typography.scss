@@ -1,18 +1,8 @@
-@import '~@angular/material/theming';
+@use '@angular/material' as mat;
 
-$custom-typography: mat-typography-config(
+$custom-typography: mat.define-typography-config(
   $font-family: 'Quicksand',
-  $display-4: mat-typography-level(112px, 112px, 900, $letter-spacing: -0.05em),
-  $display-3: mat-typography-level(56px, 56px, 800, $letter-spacing: -0.02em),
-  $display-2: mat-typography-level(45px, 48px, 700, $letter-spacing: -0.005em),
-  $display-1: mat-typography-level(34px, 40px, 600),
-  $headline: mat-typography-level(54px, 36px, 600), // h1
-  $title: mat-typography-level(2.999rem, 1, 500), // h2
-  $subheading-2: mat-typography-level(2.333rem, 1, 500), // h3
-  $subheading-1: mat-typography-level(1.9rem, 1, 300), //h4
-  $body-2: mat-typography-level(18px, 28px, 700),
-  $body-1: mat-typography-level(1.3125rem, 1.5rem, 400),
-  $caption: mat-typography-level(14px, 22px, 400)
+  $body-2: mat.define-typography-level(18px, 28px, 700),
+  $body-1: mat.define-typography-level(1.3125rem, 1.5rem, 400),
+  $caption: mat.define-typography-level(14px, 22px, 400)
 );
-
-@include mat-core($custom-typography);
